@@ -129,7 +129,7 @@
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(160, 40);
             this.buttonSubmit.TabIndex = 0;
-            this.buttonSubmit.Text = "提交任务";
+            this.buttonSubmit.Text = "开始任务";
             this.buttonSubmit.UseVisualStyleBackColor = true;
             // 
             // buttonValidate
@@ -138,7 +138,7 @@
             this.buttonValidate.Name = "buttonValidate";
             this.buttonValidate.Size = new System.Drawing.Size(160, 40);
             this.buttonValidate.TabIndex = 1;
-            this.buttonValidate.Text = "数据校验";
+            this.buttonValidate.Text = "上传数据集";
             this.buttonValidate.UseVisualStyleBackColor = true;
             // 
             // buttonGenerateJson
@@ -147,7 +147,7 @@
             this.buttonGenerateJson.Name = "buttonGenerateJson";
             this.buttonGenerateJson.Size = new System.Drawing.Size(160, 40);
             this.buttonGenerateJson.TabIndex = 2;
-            this.buttonGenerateJson.Text = "生成任务JSON";
+            this.buttonGenerateJson.Text = "关闭";
             this.buttonGenerateJson.UseVisualStyleBackColor = true;
             // 
             // groupParams
@@ -174,7 +174,7 @@
             this.labelEpochs.Name = "labelEpochs";
             this.labelEpochs.Size = new System.Drawing.Size(50, 17);
             this.labelEpochs.TabIndex = 0;
-            this.labelEpochs.Text = "epochs";
+            this.labelEpochs.Text = "训练轮数";
             // 
             // textEpochs
             // 
@@ -191,7 +191,7 @@
             this.labelImgSize.Name = "labelImgSize";
             this.labelImgSize.Size = new System.Drawing.Size(42, 17);
             this.labelImgSize.TabIndex = 2;
-            this.labelImgSize.Text = "imgsz";
+            this.labelImgSize.Text = "图像尺寸";
             // 
             // textImgSize
             // 
@@ -208,7 +208,7 @@
             this.labelDevice.Name = "labelDevice";
             this.labelDevice.Size = new System.Drawing.Size(47, 17);
             this.labelDevice.TabIndex = 4;
-            this.labelDevice.Text = "device";
+            this.labelDevice.Text = "设备";
             // 
             // textDevice
             // 
@@ -225,7 +225,7 @@
             this.labelBatch.Name = "labelBatch";
             this.labelBatch.Size = new System.Drawing.Size(41, 17);
             this.labelBatch.TabIndex = 6;
-            this.labelBatch.Text = "batch";
+            this.labelBatch.Text = "批次大小";
             // 
             // textBatch
             // 
@@ -269,8 +269,8 @@
             this.comboTaskType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboTaskType.FormattingEnabled = true;
             this.comboTaskType.Items.AddRange(new object[] {
-            "classify",
-            "detect"});
+            "分类",
+            "检测"});
             this.comboTaskType.Location = new System.Drawing.Point(120, 31);
             this.comboTaskType.Name = "comboTaskType";
             this.comboTaskType.Size = new System.Drawing.Size(160, 24);
@@ -291,9 +291,9 @@
             this.comboMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboMode.FormattingEnabled = true;
             this.comboMode.Items.AddRange(new object[] {
-            "train",
-            "val",
-            "predict"});
+            "训练",
+            "验证",
+            "推理"});
             this.comboMode.Location = new System.Drawing.Point(392, 31);
             this.comboMode.Name = "comboMode";
             this.comboMode.Size = new System.Drawing.Size(160, 24);
@@ -306,7 +306,7 @@
             this.labelData.Name = "labelData";
             this.labelData.Size = new System.Drawing.Size(68, 17);
             this.labelData.TabIndex = 4;
-            this.labelData.Text = "数据集目录";
+            this.labelData.Text = "数据路径(目录)";
             // 
             // textData
             // 
@@ -341,7 +341,7 @@
             this.labelModel.Name = "labelModel";
             this.labelModel.Size = new System.Drawing.Size(44, 17);
             this.labelModel.TabIndex = 8;
-            this.labelModel.Text = "模型";
+            this.labelModel.Text = "预训练模型";
             // 
             // comboModel
             // 

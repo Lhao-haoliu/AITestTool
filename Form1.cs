@@ -33,9 +33,8 @@ namespace AITestTool
 
         private void UpdateDataLabel()
         {
-            var isClassify = comboTaskType.SelectedItem != null &&
-                             comboTaskType.SelectedItem.ToString() == "classify";
-            labelData.Text = isClassify ? "数据集目录" : "data.yaml";
+            var isClassify = comboTaskType.SelectedIndex == 0;
+            labelData.Text = isClassify ? "数据路径(目录)" : "数据路径(yaml)";
             labelDataHint.Text = isClassify ? "目录结构: train/val/类别子目录" : "仅支持 .yaml/.yml";
         }
     }
